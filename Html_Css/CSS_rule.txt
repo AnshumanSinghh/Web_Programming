@@ -59,7 +59,7 @@ a::b    -- Pseudoelement Selector
     in CSS previously. It has ability to have variables.
 
 
-==> SASS has also a nesting property similar to nestings are used in for or if-else etc loops.
+==> SASS has also a nesting property similar to nested for loops or nested if-else statements etc.
     div{
         # it will style div
 
