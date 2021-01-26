@@ -1,0 +1,13 @@
+// $variabale name: varibale property, to create variables in SASS
+$color: royalblue; 
+ul{
+    font-size: 14px;
+    color: $color;
+}
+
+ol{
+    font-size: 18px;
+    color: $color;
+}
+//  we have defined the variable once and can use many times, it will gives more flexibity to change or manage CSS property
+//  we need to change only once and it will be reflected on the whole page where ever it has been used.

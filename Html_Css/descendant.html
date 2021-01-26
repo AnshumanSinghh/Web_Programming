@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant!</title>
+    <style>
+        /* Target the ul that immediately contains li, Represented as "ul > li" OR "ul li" */
+        ul li {
+            /* This is more general selector called Descendant Selector, selects all descendant elements */
+            color: blue;
+        }
+        
+        ul > li {
+            /* Child Selector */
+            color: aquamarine;
+        }
+        /* Both will selects same elements & known as DESCENDANT SELECTOR & CHILD SELECTOR respectively */
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Descendant & Child Selector!</h1>
+        <ol>
+            <li>list item one</li>
+            <li>list item two</li>
+            <ul>
+                <!-- I only want to style only these li in particular color -->
+                <li>Sublist item one</li>
+                <li>Sublist item two</li>
+            </ul>
+            <li>list item three</li>
+        </ol>
+        
+    </div>
+</body>
+</html>

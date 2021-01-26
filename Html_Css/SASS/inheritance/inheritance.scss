@@ -1,0 +1,22 @@
+%message {
+    font-family: sans-serif;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 20px; 
+    margin: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+.success {
+    @extend %message;
+    background-color: green;
+}
+.warning {
+    @extend %message;
+    background-color: rgb(250, 20, 20);
+}
+.primary {
+    @extend %message;
+    background-color: blue;
+}

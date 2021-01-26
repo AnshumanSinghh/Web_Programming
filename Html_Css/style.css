@@ -1,0 +1,17 @@
+
+*{
+   margin: 0;
+   padding: 0; 
+}
+body{
+    box-sizing:border-box;
+    width: 99vw;
+    height: 99vh;
+    background: linear-gradient(45deg, rgba(17, 36, 206, 0.897), violet );
+}
+
+.h1{
+    text-align: center;
+    color:aquamarine;
+    padding: 10px;
+}

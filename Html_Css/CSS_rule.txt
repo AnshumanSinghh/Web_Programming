@@ -1,0 +1,103 @@
+CSS Specificity rule:
+
+1. inline
+2. id
+3. class
+4. type
+
+If there is any contradiction between css properties that which css property is to be apply and which one to not
+then css will follow the CSS Specificity rule in order to apply css property. That is inline CSS property has highest
+preference then id then class and so on. (It depends on how precisely we are Identifying the element like, inline will
+be Identified at the element itself after that id uniquely identifies the elements and then class and so on).
+
+
+        CSS Selectors:
+
+a, b    -- Multiple Element Selector
+
+a b     -- Descendant Selector
+
+a > b   -- Child Selector
+
+a + b   -- Adjacent Sibling Selector
+
+[a = b] -- Attribute Selector
+
+a:b     -- Pseudo Selector
+
+a::b    -- Pseudoelement Selector
+
+==> In CSS we not just style a particular elements always but we can style an element only under certain condition 
+    or only when an element is an particular state. Like when hover something which can be begin to do this by adding
+    Pseudo Class.
+
+
+==> There are several ways to make our Web Pages Responsive:-
+
+    1. viewport : visual part of the screen that the user can see.
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       The above line of code is providing meta data to change the viewport to be specifically the width of device.
+
+    2. Media Queries : It is all about controlling, how our web pages going to look depending how we render? 
+    
+    3. Flexbox : automatically handles no of columns according to screen size
+       SYNTAX: 
+       display:flex; /* to use css flexbox (whole container will be flex box container)*/
+       flex-wrap: wrap; /* if there is not enough room at the end of the line for all
+                            of the elements go around and wrap all those elements */
+
+    4. Grids : screen is divided into 12 columns we have to set no of columns we want.
+       SYNTAX:
+       display: grid;
+       padding: 10px;
+       column-gap: 20px; /* for gap between each columns */
+       row-gap: 10px; /* for gap between each rows */
+        
+
+==> SASS Language (Extension to CSS): It adds additional features what css is offer to make it little bit more powerfull
+    to use and manipulate the CSS in a way that going to make it faster and remove some other repeatations that might had 
+    in CSS previously. It has ability to have variables.
+
+
+==> SASS has also a nesting property similar to nestings are used in for or if-else etc loops.
+    div{
+        # it will style div
+
+        p{
+            # it will style p inside div
+
+            ol{
+                # it will style ordered list inside of p which is inside of div
+            }
+        }
+        ul{
+            # it will style unordered list inside of div
+        }
+    }
+
+--| On Compilation of .scss to .css these all will be changed into Descendant Selector |--
+
+--> But what SASS does is it provides flexibility and readibility. 
+
+
+==> SASS also has Inheritance : similar to oops inheritance here we can inherit the css properties like Bootstrap is using (alert-success means green, text-center menas the text will be centered etc.).
+%message {
+    font-family: sans-serif;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 20px; 
+    margin: 20px;
+}
+
+.success {
+    @extend %message;
+    background-color: green;
+}
+.warning {
+    @extend %message;
+    background-color: red;
+}
+.primary {
+    @extend %message;
+    background-color: blue;
+}

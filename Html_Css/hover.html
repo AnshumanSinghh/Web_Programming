@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover!</title>
+    <style>
+        button{
+            width: 200px;
+            height: 50px;
+            font-size: 24px;
+            background-color: green;
+        }
+        button:hover {
+            /* When we hover the button the color will change from green to orangered */
+            background-color: orangered;
+        }
+        #pseudo::first-letter{
+            /* Pseudo Element Selector */
+            color: aquamarine;
+            font-size:45px;
+            font-style: oblique;
+            font-variant-caps: titling-caps;
+        }
+    </style>
+</head>
+<body>
+    <h2>Adding Hover Effect using <i>Pseudo Class Selector (button:hover).</i></h2>
+    <button><strong>Cick Me</strong></button>
+    <h3>On hovering the button the color will be changd to orangered.</h3>
+    <br><br>
+    <h2 id="pseudo">Pseudo Element Selector<i><strong>(Like: ::first-line, ::first-letter, ::bofore, ::after etc).</strong></i></h2>
+</body>
+</html>

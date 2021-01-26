@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            text-align: center;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- thead for heading of table -->
+        <thead>
+            <!-- Heading is also in a row so we will put all <th> inside <tr>  -->
+            <tr>
+            <!-- <th> for each header -->
+            <th>Ocean</th> <!-- these headers will be in bold style by default-->
+            <th>Average Depth</th>
+            <th>Maximum Depth</th>
+            </tr>
+        </thead>
+        <!-- <tbody> contains number of rows that contains data -->
+        <tbody>
+            <!-- <tr> for each row -->
+            <tr>
+                <!-- <td> for each data inside a row -->
+                <td>Pacific Ocean</td> <!-- data cells <td> to locate each of cells in a Table-->
+                <td>4,280 m</td>
+                <td>10,911 m</td>
+            </tr>
+            <!-- another <tr> for adding next row to add more datas and this will go so on -->
+            <tr>
+                <td>Atlantic Ocean</td>
+                <td>3,646 m</td>
+                <td>b,486 m</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

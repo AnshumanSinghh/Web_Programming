@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="table.html" method="post">
+        At the time of form submission we recieve a form <strong>in web application, we want someway of knowing which input 
+        value corresponded to which value.</strong>So we use name="by_whatever_name_we_want_know"<br><br>
+        <div>
+            <li for="fname" style="list-style:none;">Full Name:</li>
+            <input type="text" placeholder="Full Name" name="fname" required><br><br>
+            <li for="email" style="list-style:none;">E-mail address:</li>
+            <input type="email" placeholder="Email" name="email" required><br><br>
+            <li for="password" style="list-style:none;">Password:</li>
+            <input type="password" placeholder="Your Password" name="password" required>
+        </div>
+
+        <!-- For Drop-down -->
+        <div>
+            <br>
+            <li for="country" style="list-style:none">Choose Your Country:</li>
+            <input list="countries" placeholder="Country" name="country">
+            <!-- List of datas for available options -->
+            <datalist id="countries">
+                <!-- Name or Value of Options -->
+                <option value="India">
+                <option value="USA">
+                <option value="Russia">
+                <option value="Mauritious">
+                <option value="Bhutan">
+                <option value="America">
+                <option value="Indonesia">
+                <option value="Maldives">
+                <option value="France">
+            </datalist>
+        </div>
+
+        <!-- Radio Button -->
+        <div>
+            <br>
+            Favourite color?
+            <input type="radio" name="color" value="red"> Red
+            <input type="radio" name="color" value="blue"> Green
+            <input type="radio" name="color" value="green"> Blue
+            <input type="radio" name="color" value="other"> Other
+        </div>
+        <br>
+        <input type="submit" value="Press_me">
+    </form>
+</body>
+</html>

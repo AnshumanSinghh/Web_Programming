@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute</title>
+    <style>
+        a{
+            color: royalblue;
+            text-decoration: none; /* Removes underline of <a> tag*/
+        }
+        /* But I want that facebool looks different from others, then */
+        a[href="https://facebook.com"] {
+            /* Attribute Selector [only applied where href="hhtps://facebook.com"] */
+            color: orangered;
+        }
+        li{
+            list-style: georgian; /* Used to remove or change bullet type of list tag */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Attribute Selector!</h1>
+        <ul>
+            <li><a href="https://google.com">GooGle</a></li>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="https://amazon.com">Amazon</a></li>
+            <li><a href="https://flipkart.com">Flipkart</a></li>
+            <li><a href="https://nseindia.com">NSE India</a></li>
+        </ul>
+    </div>
+</body>
+</html>
